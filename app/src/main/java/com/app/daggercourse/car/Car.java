@@ -1,4 +1,4 @@
-package com.app.daggercourse;
+package com.app.daggercourse.car;
 
 import android.util.Log;
 
@@ -7,7 +7,8 @@ import javax.inject.Inject;
 public class Car {
     private static final String TAG = "Car";
 
-    @Inject Engine engine;
+    @Inject
+    Engine engine;
     private Wheels wheels;
 
     @Inject
@@ -21,6 +22,7 @@ public class Car {
     }
 
     public void drive() {
+        engine.start();
         Log.d(TAG, "driving ...");
     }
 }

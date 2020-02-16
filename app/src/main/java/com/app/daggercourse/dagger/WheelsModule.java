@@ -1,4 +1,8 @@
-package com.app.daggercourse;
+package com.app.daggercourse.dagger;
+
+import com.app.daggercourse.car.Rims;
+import com.app.daggercourse.car.Tires;
+import com.app.daggercourse.car.Wheels;
 
 import dagger.Module;
 import dagger.Provides;
